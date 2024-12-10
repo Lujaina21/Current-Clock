@@ -59,6 +59,7 @@ h1 {
 
 /* !Main Styling */
 .main-txt {
+  background: -o-linear-gradient(rgba(0, 10, 30, 0.3), rgba(0, 10, 30, 0.6));
   background: -webkit-gradient(
     linear,
     left top,
@@ -66,14 +67,28 @@ h1 {
     from(rgba(0, 10, 30, 0.3)),
     to(rgba(0, 10, 30, 0.6))
   );
-  background: -o-linear-gradient(rgba(0, 10, 30, 0.3), rgba(0, 10, 30, 0.6));
   background: linear-gradient(rgba(0, 10, 30, 0.3), rgba(0, 10, 30, 0.6));
   height: 300px;
   width: 650px;
   border-radius: 25px;
   margin-top: 2rem;
+  -webkit-transition: all 0.7s ease-in-out;
+  -o-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+.main-txt:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .main-txt h1 {
   font-size: 62px;
+}
+
+#time {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
